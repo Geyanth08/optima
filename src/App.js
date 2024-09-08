@@ -82,7 +82,7 @@ const App = () => {
         <section id="sponsors" className="sponsors-section">
           <h2>Become a Sponsor</h2>
           <p>
-            Interested in sponsoring OPTIMA? <a href="register.html" className="sponsor-link">Click here to register yourself</a> or <a href="contact.html" className="sponsor-link">contact us for more details</a> about sponsorship opportunities.
+            Interested in sponsoring OPTIMA? <a href="https://www.instagram.com/optima24_nitt/" className="sponsor-link">Click here to register yourself</a> or <a href="https://www.instagram.com/optima24_nitt/" className="sponsor-link">contact us for more details</a> about sponsorship opportunities.
           </p>
         </section>
 
