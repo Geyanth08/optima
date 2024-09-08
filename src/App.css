@@ -1,38 +1,198 @@
-.App {
+@import '~slick-carousel/slick/slick.css';
+@import '~slick-carousel/slick/slick-theme.css';
+
+:root {
+  --primary-color: #012951;
+  --secondary-color: #012549;
+  --text-color: #FFFFFF;
+  --background-color: #EEEEEE;
+  --highlight-color: #0051a3;
+  --announcement-background: #FFD700;
+  --footer-background: #012549;
+  --footer-text: #FFFFFF;
+  --header-background: #012951;
+  --header-text: #FFFFFF;
+  --light-grey: #f4f4f4;
+  --white: #ffffff;
+}
+
+body {
+  font-family: 'SUSE', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: var(--background-color);
+}
+
+header {
+  background-color: var(--header-background);
+  color: var(--header-text);
+  padding: 10px;
+  margin: 0;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+header h1 {
+  font-size: 24px;
+  margin: 0;
+  padding: 0;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.banner {
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
+  padding: 10px;
+  background-color: var(--secondary-color);
   align-items: center;
+}
+
+.banner img {
+  height: 100px;
+  width: auto;
+}
+
+.nit-logo-large {
+  height: 100px;
+}
+
+.nit-logo-small {
+  display: none;
+}
+
+.banner img.club-logo {
+  height: 100px;
+  width: auto;
+}
+
+/* Media Query for Mobile Screens */
+@media screen and (max-width: 768px) {
+  .nit-logo-large {
+    display: none;
+  }
+
+  .nit-logo-small {
+    display: block;
+    height: 70px;
+    width: auto;
+  }
+
+  .banner {
+    justify-content: center;
+  }
+}
+
+.announcement-bar {
+  background-color: var(--announcement-background);
+  /* color: var(--text-color); */
+  text-align: center;
+  padding: 10px;
+}
+
+.highlight-section {
+  text-align: center;
+  padding: 20px;
+}
+
+.carousel-description {
+  padding: 20px;
+  background-color: var(--secondary-color);
+  color: var(--text-color);
+}
+
+/* About the Department Section */
+.about-section {
+  background-color: var(--light-grey);
+  color: var(--primary-color);
+  padding: 20px;
+}
+
+.about-section h2,
+.gallery-section h2,
+.team-section h2 {
+  text-align: center;
+}
+
+/* Events Section */
+.events-section {
+  background-color: var(--white);
+  color: var(--primary-color);
+  padding: 20px;
+  text-align: center;
+}
+
+.events-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.event-card {
+  background-color: var(--primary-color);
+  color: var(--text-color);
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  flex: 1 1 150px;
+  text-align: center;
+  transition: background 0.3s;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.event-card:hover {
+  background-color: var(--highlight-color);
+}
+
+.more-info {
+  margin-top: 10px;
+}
+
+.more-info a {
+  color: var(--primary-color);
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.more-info a:hover {
+  text-decoration: underline;
+}
+
+.sponsors-section {
+  padding: 20px;
+  background-color: #f9f9f9;
+  /* Light grey background for distinction */
+}
+
+.sponsors-section h2 {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.sponsors-section p {
+  text-align: center;
+  margin: 0;
+}
+
+.sponsor-link {
+  color: var(--primary-color);
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.sponsor-link:hover {
+  text-decoration: underline;
+}
+
+
+section {
+  padding: 20px;
+}
+
+footer {
+  background-color: var(--footer-background);
+  color: var(--footer-text);
+  text-align: center;
+  padding: 10px;
+}
+
+#gallery {
+  background-color: white;
 }

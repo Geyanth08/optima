@@ -1,0 +1,17 @@
+.info-column {
+  background-color: var(--secondary-color);
+  color: var(--text-color);
+  padding: 20px;
+  border-radius: 10px;
+  margin: 10px;
+  text-align: center;
+}
+
+.info-column ul {
+  list-style: none;
+  padding: 0;
+}
+
+.info-column ul li {
+  padding: 5px 0;
+}
