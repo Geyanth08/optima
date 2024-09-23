@@ -15,8 +15,9 @@
 
 .carousel-slide img {
   width: 100%;
-  height: auto;
+  height: 50vh;
   border-radius: 10px;
+  object-fit: cover;
 }
 
 .description-container {
@@ -39,19 +40,6 @@
 .highlight-description p {
   color: #555;
   line-height: 1.6;
-}
-
-/* Removed the styles related to arrows */
-.carousel-arrow {
-  /* Remove any arrow-specific styles */
-}
-
-.next-arrow {
-  /* Remove any arrow-specific styles */
-}
-
-.prev-arrow {
-  /* Remove any arrow-specific styles */
 }
 
 /* Mobile styles */

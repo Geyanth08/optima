@@ -3,7 +3,7 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: var(--primary-color);
+  background-color: var(--secondary-color);
   padding: 0 100px;
   position: -webkit-sticky;
   /* For Safari */
@@ -11,6 +11,12 @@ nav {
   top: 0;
   z-index: 1000;
   /* Ensure it sits above other content */
+}
+
+/* Container for menu items (section names) */
+.menu-container {
+  display: flex;
+  align-items: center;
 }
 
 /* Menu styles */
@@ -30,11 +36,19 @@ nav {
   text-decoration: none;
   padding: 10px;
   display: block;
-  transition: color 0.3s ease;
+  transition: color 0.3s ease, font-weight 0.3s ease;
 }
 
 .menu li a:hover {
   color: lightcoral;
+  cursor: pointer;
+}
+
+/* Active link styles */
+.menu li a.active {
+  font-weight: bold;
+  border-bottom: 2px solid lightcoral;
+  /* Underline effect */
 }
 
 /* Social Icons */
@@ -44,8 +58,6 @@ nav {
 }
 
 .social-icons a {
-  display: flex;
-  align-items: center;
   color: var(--text-color);
   transition: color 0.3s ease;
 }

@@ -24,23 +24,29 @@ body {
 }
 
 header {
-  background-color: var(--header-background);
+  background-color: var(--secondary-color);
   color: var(--header-text);
-  padding: 10px;
+  /* padding: 10px; */
   margin: 0;
   text-align: center;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  width: 100%;
 }
 
 header h1 {
+  background-color: var(--primary-color) !important;
   font-size: 24px;
   margin: 0;
-  padding: 0;
+  padding: 5px;
 }
 
 .banner {
   display: flex;
   justify-content: space-between;
-  padding: 10px;
+  margin: 0;
+  padding-right: 80px;
   background-color: var(--secondary-color);
   align-items: center;
 }
@@ -59,12 +65,11 @@ header h1 {
 }
 
 .banner img.club-logo {
-  height: 100px;
+  height: 65px;
   width: auto;
 }
 
-/* Media Query for Mobile Screens */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 850px) {
   .nit-logo-large {
     display: none;
   }
@@ -77,12 +82,12 @@ header h1 {
 
   .banner {
     justify-content: center;
+    padding: 0;
   }
 }
 
 .announcement-bar {
   background-color: var(--announcement-background);
-  /* color: var(--text-color); */
   text-align: center;
   padding: 10px;
 }
@@ -98,25 +103,36 @@ header h1 {
   color: var(--text-color);
 }
 
-/* About the Department Section */
-.about-section {
+.about-section,
+.gallery-section,
+.team-section,
+.sponsors-section,
+.events-section,
+.archive-section {
   background-color: var(--light-grey);
+  /* width: 100%; */
   color: var(--primary-color);
-  padding: 20px;
+  padding: 16vh 20px 0 20px;
+}
+
+.about-section,
+.sponsors-section,
+.events-section,
+.archive-section {
+  height: 100vh;
 }
 
 .about-section h2,
 .gallery-section h2,
-.team-section h2 {
+.team-section h2,
+.events-section h2,
+.sponsors-section h2,
+.archive-section h2 {
   text-align: center;
 }
 
-/* Events Section */
-.events-section {
-  background-color: var(--white);
-  color: var(--primary-color);
-  padding: 20px;
-  text-align: center;
+.team-section {
+  padding-top: 12vh;
 }
 
 .events-container {
@@ -155,17 +171,6 @@ header h1 {
   text-decoration: underline;
 }
 
-.sponsors-section {
-  padding: 20px;
-  background-color: #f9f9f9;
-  /* Light grey background for distinction */
-}
-
-.sponsors-section h2 {
-  text-align: center;
-  margin-bottom: 10px;
-}
-
 .sponsors-section p {
   text-align: center;
   margin: 0;
@@ -181,16 +186,15 @@ header h1 {
   text-decoration: underline;
 }
 
-
-section {
-  padding: 20px;
-}
-
 footer {
   background-color: var(--footer-background);
   color: var(--footer-text);
   text-align: center;
   padding: 10px;
+}
+
+footer p {
+  margin: 0;
 }
 
 #gallery {

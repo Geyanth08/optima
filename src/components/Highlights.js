@@ -4,9 +4,9 @@ import './Highlights.css';
 
 const Highlights = () => {
   const slideImages = [
-    '/Images/highlight1.JPG',
-    '/Images/highlight1.JPG',
-    '/Images/highlight1.JPG',
+    '/Images/optima-23-8.jpeg',
+    '/Images/optima-23-13.jpeg',
+    '/Images/optima-23-6.jpeg',
   ];
 
   const settings = {

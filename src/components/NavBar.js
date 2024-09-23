@@ -1,39 +1,104 @@
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
+import { Link } from 'react-scroll'; // Use react-scroll for smooth scrolling
 import InstagramIcon from '@mui/icons-material/Instagram';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import './NavBar.css'; // Import your CSS file
 
-const NavBar = () => {
+const NavBar = ({ setActiveSection }) => { // Accept setActiveSection as a prop
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const toggleMenu = () => {
     setIsMenuOpen(prevState => !prevState);
   };
 
+  const closeMenu = () => {
+    setIsMenuOpen(false);
+  };
+
+  const handleSectionClick = (section) => {
+    setActiveSection(section);
+    closeMenu();
+  };
+
   return (
     <nav>
-      <div className="hamburger" onClick={toggleMenu}>
-        <div className="bar"></div>
-        <div className="bar"></div>
-        <div className="bar"></div>
+      <div className="menu-container">
+        <div className="hamburger" onClick={toggleMenu}>
+          <div className="bar"></div>
+          <div className="bar"></div>
+          <div className="bar"></div>
+        </div>
+
+        <ul className={`menu ${isMenuOpen ? 'show' : ''}`}>
+          <li>
+            <Link
+              to="about"
+              smooth={true}
+              duration={500}
+              onClick={() => handleSectionClick('about')}
+            >
+              About
+            </Link>
+          </li>
+          <li>
+            <Link
+              to="events"
+              smooth={true}
+              duration={500}
+              onClick={() => handleSectionClick('events')}
+            >
+              Events
+            </Link>
+          </li>
+          <li>
+            <Link
+              to="sponsors"
+              smooth={true}
+              duration={500}
+              onClick={() => handleSectionClick('sponsors')}
+            >
+              Sponsors
+            </Link>
+          </li>
+          <li>
+            <Link
+              to="gallery"
+              smooth={true}
+              duration={500}
+              onClick={() => handleSectionClick('gallery')}
+            >
+              Gallery
+            </Link>
+          </li>
+          <li>
+            <Link
+              to="team"
+              smooth={true}
+              duration={500}
+              onClick={() => handleSectionClick('team')}
+            >
+              Team
+            </Link>
+          </li>
+          <li>
+            <Link
+              to="archive"
+              smooth={true}
+              duration={500}
+              onClick={() => handleSectionClick('archive')}
+            >
+              Archive
+            </Link>
+          </li>
+        </ul>
       </div>
 
-      <ul className={`menu ${isMenuOpen ? 'show' : ''}`}>
-        <li><Link to="/">Home</Link></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#events">Events</a></li>
-        <li><a href="#sponsors">Sponsors</a></li>
-        <li><Link to="/gallery">Gallery</Link></li>
-        <li><a href="#team">Team</a></li>
-      </ul>
-
       <div className="social-icons">
-        <a href="https://www.instagram.com/optima24_nitt/" target="_blank" rel="noreferrer">
-          <InstagramIcon style={{ fontSize: 24, color: 'var(--text-color)' }} />
+        <a href="https://www.instagram.com/optima24_nitt/">
+          <InstagramIcon />
         </a>
-        <a href="https://www.linkedin.com/company/optima-nitt/" target="_blank" rel="noreferrer">
-          <LinkedInIcon style={{ fontSize: 24, color: 'var(--text-color)' }} />
+        <a href="https://www.linkedin.com/in/optima24/">
+          <LinkedInIcon />
         </a>
       </div>
     </nav>
