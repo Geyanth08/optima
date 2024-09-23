@@ -200,3 +200,12 @@ footer p {
 #gallery {
   background-color: white;
 }
+
+@media screen and (max-width: 900px) {
+  .about-section,
+  .sponsors-section,
+  .events-section,
+  .archive-section {
+    height: auto; /* Remove fixed height for mobile */
+  }
+}

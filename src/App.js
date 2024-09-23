@@ -58,8 +58,8 @@ const App = () => {
         <img src="/Images/nitt-mob-latest.png" alt="NIT Logo Mobile" className="nit-logo-small" />
         <img src="/Images/club.png" alt="Club Logo" className="club-logo" />
       </div>
-
-      <header className="header">
+    
+      <header id="home" className="header">
         <h1>Department of Computer Applications</h1>
         <NavBar setActiveSection={setActiveSection} />
       </header>
@@ -120,14 +120,7 @@ const App = () => {
         {(isMobile || activeSection === 'gallery') && (
           <section id="gallery" className="gallery-section">
             <h2>Gallery '24</h2>
-            <Gallery images={slideImages} archive={true} setActiveSection={setActiveSection}/>
-          </section>
-        )}
-
-        {(isMobile || activeSection === 'archive') && (
-          <section id="archive" className="archive-section">
-            <h2>Gallery</h2>
-            <Gallery images={archiveImages} archive={false} setActiveSection={setActiveSection}/>
+            <Gallery images={slideImages} archive={true} setActiveSection={setActiveSection} />
           </section>
         )}
 
@@ -149,6 +142,13 @@ const App = () => {
                 <TeamMember key={index} {...member} />
               ))}
             </div>
+          </section>
+        )}
+
+        {(isMobile || activeSection === 'archive') && (
+          <section id="archive" className="archive-section">
+            <h2>Gallery</h2>
+            <Gallery images={archiveImages} archive={false} setActiveSection={setActiveSection} />
           </section>
         )}
       </div>
