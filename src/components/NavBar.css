@@ -1,19 +1,15 @@
-/* Base styles */
 nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
   background-color: var(--secondary-color);
   padding: 0 100px;
-  position: -webkit-sticky;
-  /* For Safari */
   position: sticky;
   top: 0;
   z-index: 1000;
-  /* Ensure it sits above other content */
 }
 
-/* Container for menu items (section names) */
+/* Menu container */
 .menu-container {
   display: flex;
   align-items: center;
@@ -44,11 +40,9 @@ nav {
   cursor: pointer;
 }
 
-/* Active link styles */
 .menu li a.active {
   font-weight: bold;
   border-bottom: 2px solid lightcoral;
-  /* Underline effect */
 }
 
 /* Social Icons */
@@ -81,12 +75,17 @@ nav {
   transition: 0.3s;
 }
 
+/* Hide hamburger when menu is open */
+.menu.show ~ .hamburger {
+  display: none;
+}
+
 /* Mobile styles */
 @media (max-width: 768px) {
   nav {
     flex-direction: column;
     align-items: flex-start;
-    position: relative;
+    padding: 0 20px;
   }
 
   .hamburger {

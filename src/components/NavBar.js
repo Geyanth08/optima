@@ -4,7 +4,7 @@ import InstagramIcon from '@mui/icons-material/Instagram';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import './NavBar.css'; // Import your CSS file
 
-const NavBar = ({ setActiveSection, isMobile }) => { // Added isMobile prop for desktop and mobile distinction
+const NavBar = ({ setActiveSection, isMobile }) => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const toggleMenu = () => {
@@ -19,13 +19,13 @@ const NavBar = ({ setActiveSection, isMobile }) => { // Added isMobile prop for 
     if (!isMobile) {
       setActiveSection(section);
     }
-    closeMenu();
+    closeMenu(); // Close the menu after clicking a section
   };
 
   const handleScrollToTop = () => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
     setTimeout(() => {
-      setActiveSection('about'); // Activate "About" section after scrolling to top
+      setActiveSection('about'); // Activate "About" section after scrolling to the top
     }, 500); // Delay to ensure smooth scroll finishes before activation
     closeMenu();
   };
@@ -33,12 +33,14 @@ const NavBar = ({ setActiveSection, isMobile }) => { // Added isMobile prop for 
   return (
     <nav>
       <div className="menu-container">
-        <div className="hamburger" onClick={toggleMenu}>
+        {/* Hamburger menu */}
+        <div className={`hamburger ${isMenuOpen ? 'hidden' : ''}`} onClick={toggleMenu}>
           <div className="bar"></div>
           <div className="bar"></div>
           <div className="bar"></div>
         </div>
 
+        {/* Menu items */}
         <ul className={`menu ${isMenuOpen ? 'show' : ''}`}>
           <li>
             <a onClick={handleScrollToTop}>Home</a> {/* Scrolls to top for Home */}
@@ -106,6 +108,7 @@ const NavBar = ({ setActiveSection, isMobile }) => { // Added isMobile prop for 
         </ul>
       </div>
 
+      {/* Social icons */}
       <div className="social-icons">
         <a href="https://www.instagram.com/optima24_nitt/">
           <InstagramIcon />
