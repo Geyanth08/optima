@@ -112,13 +112,13 @@ header h1 {
   background-color: var(--light-grey);
   /* width: 100%; */
   color: var(--primary-color);
-  padding: 16vh 20px 0 20px;
+  padding: 16vh 20px 10px 20px;
 }
 
 .about-section,
 .sponsors-section,
-.events-section,
-.archive-section {
+.events-section
+{
   height: 100vh;
 }
 
@@ -135,11 +135,19 @@ header h1 {
   padding-top: 12vh;
 }
 
+.events-section > div > p {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .events-container {
   display: flex;
   flex-wrap: wrap;
   gap: 10px;
-  justify-content: center;
+  justify-content: center; /* Aligns cards horizontally at center */
+  max-width: 1000px; /* Optional: Limit the container's width */
+  margin: 0 auto; /* Center the container within the page */
 }
 
 .event-card {
@@ -148,10 +156,24 @@ header h1 {
   padding: 15px;
   border-radius: 10px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-  flex: 1 1 150px;
+  flex-basis: calc(33.33% - 20px); /* 3 cards per row, accounting for gap */
   text-align: center;
   transition: background 0.3s;
+  max-width: 200px; /* Optional: Prevent cards from growing too large */
 }
+
+@media screen and (max-width: 900px) {
+  .event-card {
+    flex-basis: calc(50% - 20px); /* 2 cards per row on smaller screens */
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .event-card {
+    flex-basis: calc(100% - 20px); /* 1 card per row on very small screens */
+  }
+}
+
 
 .event-card:hover {
   background-color: var(--highlight-color);

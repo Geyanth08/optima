@@ -4,7 +4,7 @@ import InstagramIcon from '@mui/icons-material/Instagram';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import './NavBar.css'; // Import your CSS file
 
-const NavBar = ({ setActiveSection }) => { // Accept setActiveSection as a prop
+const NavBar = ({ setActiveSection, isMobile }) => { // Added isMobile prop for desktop and mobile distinction
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const toggleMenu = () => {
@@ -16,7 +16,17 @@ const NavBar = ({ setActiveSection }) => { // Accept setActiveSection as a prop
   };
 
   const handleSectionClick = (section) => {
-    setActiveSection(section);
+    if (!isMobile) {
+      setActiveSection(section);
+    }
+    closeMenu();
+  };
+
+  const handleScrollToTop = () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+    setTimeout(() => {
+      setActiveSection('about'); // Activate "About" section after scrolling to top
+    }, 500); // Delay to ensure smooth scroll finishes before activation
     closeMenu();
   };
 
@@ -30,6 +40,9 @@ const NavBar = ({ setActiveSection }) => { // Accept setActiveSection as a prop
         </div>
 
         <ul className={`menu ${isMenuOpen ? 'show' : ''}`}>
+          <li>
+            <a onClick={handleScrollToTop}>Home</a> {/* Scrolls to top for Home */}
+          </li>
           <li>
             <Link
               to="about"

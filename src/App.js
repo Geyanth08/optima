@@ -27,6 +27,26 @@ const App = () => {
     '/Images/optima-23-2.jpeg',
     '/Images/optima-23-3.jpeg',
     '/Images/optima-23-4.jpeg',
+    '/Images/optima-23-1.jpeg',
+    '/Images/optima-23-5.jpeg',
+    '/Images/optima-23-6.jpeg',
+    '/Images/optima-23-7.jpeg',
+    '/Images/optima-23-8.jpeg',
+    '/Images/optima-23-9.jpeg',
+    '/Images/optima-23-10.jpeg',
+    '/Images/optima-23-11.jpeg',
+    '/Images/optima-23-12.jpeg',
+    '/Images/optima-23-13.jpeg',
+    '/Images/optima-23-1.jpeg',
+    '/Images/optima-23-5.jpeg',
+    '/Images/optima-23-6.jpeg',
+    '/Images/optima-23-7.jpeg',
+    '/Images/optima-23-8.jpeg',
+    '/Images/optima-23-9.jpeg',
+    '/Images/optima-23-10.jpeg',
+    '/Images/optima-23-11.jpeg',
+    '/Images/optima-23-12.jpeg',
+    '/Images/optima-23-13.jpeg'
   ]
 
   const teamMembers = [
@@ -58,7 +78,7 @@ const App = () => {
         <img src="/Images/nitt-mob-latest.png" alt="NIT Logo Mobile" className="nit-logo-small" />
         <img src="/Images/club.png" alt="Club Logo" className="club-logo" />
       </div>
-    
+
       <header id="home" className="header">
         <h1>Department of Computer Applications</h1>
         <NavBar setActiveSection={setActiveSection} />
@@ -77,13 +97,13 @@ const App = () => {
             <div>
               <h2>About the Department</h2>
               <p>
-                The <strong>Department of Computer Applications</strong> is a leading institution in offering top-tier <strong>Information Technology</strong> courses, including <strong>MCA</strong>, <strong>MSc in Computer Science</strong>, and <strong>M.Tech in Data Analytics</strong>. Ranked among the top five MCA programs in the country, we are committed to providing <strong>quality education</strong> through a blend of rigorous <strong>theoretical knowledge</strong> and <strong>practical training</strong>.
+                The <strong>Department of Computer Applications</strong> is a pioneering department within the institution, offering premier Information Technology courses, including the <strong>Master of Computer Applications (MCA)</strong>, <strong>Master of Science in Computer Science</strong>, and <strong>M.Tech in Data Analytics</strong>. Recognized among the top five MCA programs in the country, the department is committed to delivering high-quality education that blends robust theoretical foundations with extensive practical training.
               </p>
               <p>
-                Our <strong>faculty</strong>, all with <strong>doctorate degrees</strong>, are dedicated to maintaining high educational standards and engaging in <strong>research</strong> and <strong>projects</strong>. The department emphasizes <strong>holistic student development</strong>, encouraging both <strong>academic excellence</strong> and active participation in <strong>co-curricular</strong> and <strong>extracurricular activities</strong>.
+                Comprising over <strong>20 faculty members</strong>, all holding doctorate degrees, the department actively engages in research and project work alongside teaching. Faculty dedication is reflected in successful student placements and the production of Ph.D. graduates. To keep pace with rapidly evolving technology, faculty participate in ongoing professional development through refresher courses and symposia.
               </p>
               <p>
-                We aim to foster <strong>value-based professionalism</strong>, equipping students with the skills and knowledge to excel in the dynamic field of <strong>IT</strong> and contribute positively to <strong>society</strong>.
+                Students are encouraged to develop organizational skills and teamwork through seminars and group discussions, alongside maintaining strong academic performance. The department also emphasizes participation in co-curricular and extracurricular activities to foster the holistic development of its students.
               </p>
             </div>
           </section>
@@ -94,14 +114,16 @@ const App = () => {
             <div>
               <h2>Events</h2>
               <div className="events-container">
-                <div className="event-card">ML Hackathon</div>
-                <div className="event-card">Coding Event</div>
+                <div className="event-card">Codecraft</div>
+                <div className="event-card">Outliers</div>
+                <div className="event-card">Clash of Thoughts</div>
+                <div className="event-card">Matrix Maze</div>
+                <div className="event-card">Brain Cache</div>
+                <div className="event-card">Pitch Perfect</div>
+                <div className="event-card">Elite Warfare</div>
                 <div className="event-card">Tech Charades</div>
-                <div className="event-card">Treasure Hunt</div>
-                <div className="event-card">Gaming Event</div>
-                <div className="event-card">Quiz</div>
               </div>
-              <p className="more-info"><a href="#gallery">More info on events</a></p>
+              <p className="more-info"><a href="https://spangled-freckle-3c4.notion.site/Welcome-to-Optima-2024-10bb3143bf688027a32afba9c503dfde">More info on events</a></p>
             </div>
           </section>
         )}
@@ -111,7 +133,7 @@ const App = () => {
             <div>
               <h2>Become a Sponsor</h2>
               <p>
-                Interested in sponsoring OPTIMA? <a href="https://www.instagram.com/optima24_nitt/" className="sponsor-link">Click here to register yourself</a> or <a href="https://www.instagram.com/optima24_nitt/" className="sponsor-link">contact us for more details</a> about sponsorship opportunities.
+                Interested in sponsoring OPTIMA? <a href="https://spangled-freckle-3c4.notion.site/Welcome-to-Optima-2024-10bb3143bf688027a32afba9c503dfde" className="sponsor-link">Click here to register yourself</a> or <a href="https://spangled-freckle-3c4.notion.site/Welcome-to-Optima-2024-10bb3143bf688027a32afba9c503dfde" className="sponsor-link">contact us for more details</a> about sponsorship opportunities.
               </p>
             </div>
           </section>

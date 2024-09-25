@@ -21,16 +21,12 @@ const Highlights = () => {
 
   const description = (
     <div className="highlight-description">
-      <h2>OPTIMA 2024</h2>
+      <h2>OPTIMA Club</h2>
       <p>
-        In the present day world, <strong>'Optimization'</strong> is the password for the success of every organization.
-        The development and implementation of <strong>Operations Research</strong> have had a significant, positive impact
-        on the <strong>Performance</strong> of all major organizations and also has found its way in our day-to-day lives through means of
-        <strong>electricity</strong>, <strong>transport</strong>, <strong>communication</strong>, etc.
+        <strong>OPTIMA</strong> is the official technical club of the Department of Computer Applications at NIT Trichy, run by students from the <strong>M.Sc Computer Science</strong> and <strong>M.Tech Data Analytics</strong> programs. It provides a platform for technical growth through <strong>hackathons</strong>, <strong>coding contests</strong>, and <strong>workshops</strong>.
       </p>
       <p>
-        The course of <strong>Operations Research</strong> and <strong>Computer Applications</strong> seeks possible avenues to materialize these growing needs.
-        And thus, our enthusiastic approach to present to you a perfect blend of technology and creativity culminates in the program of <strong>OPTIMA</strong>.
+        The club fosters hands-on learning, bridging academic knowledge with real-world applications, and connects students with industry trends and innovations in <strong>Information Technology</strong>.
       </p>
     </div>
   );
