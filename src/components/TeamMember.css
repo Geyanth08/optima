@@ -4,6 +4,7 @@
   grid-template-columns: repeat(3, 1fr);
   /* 3 columns for large screens */
   grid-gap: 20px;
+  justify-content: center; /* Centering the grid */
   margin-bottom: 40px;
   /* Space between team members and core members */
 }
@@ -14,6 +15,7 @@
   grid-template-columns: repeat(4, 1fr);
   /* 4 columns for large screens */
   grid-gap: 20px;
+  justify-content: center; /* Centering the grid */
 }
 
 /* Faculty Advisor (only one member, centered) */
