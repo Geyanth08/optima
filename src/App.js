@@ -101,7 +101,7 @@ const App = () => {
         <div className="announcement">
           <span>Optima 2024: November 9-10!</span>
           <span>For event details, click <a href="https://spangled-freckle-3c4.notion.site/Welcome-to-Optima-2024-10bb3143bf688027a32afba9c503dfde">here</a>.</span>
-          <span>Interested in sponsoring? Visit our <a href="#sponsors" onClick={() => setActiveSection('sponsors')}>sponsors section</a>!</span>
+          <span>Interested in sponsoring? Visit our <a href="https://spangled-freckle-3c4.notion.site/Registration-Sponsorship-alumni-10fb3143bf68802b8563f96a9b38bf4f" onClick={() => setActiveSection('sponsors')}>sponsors section</a>!</span>
         </div>
       </div>
 
@@ -180,6 +180,9 @@ const App = () => {
                   <img src="/Images/qr.jpeg" alt="Payment QR Code" className="qr-code" />
                 </div>
               </div>
+              <p>
+                After making the payment, please kindly <a href="https://spangled-freckle-3c4.notion.site/Registration-Sponsorship-alumni-10fb3143bf68802b8563f96a9b38bf4f" target="_blank">register yourself</a> to confirm your sponsorship.
+              </p>
               <p>
                 Your support will greatly enhance the experience for participants and showcase your commitment to fostering talent in the field!
               </p>
