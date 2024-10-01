@@ -184,7 +184,7 @@ const App = () => {
                 </div>
               </div>
               <p>
-                After making the payment, please kindly <a href="https://spangled-freckle-3c4.notion.site/Registration-Sponsorship-alumni-10fb3143bf68802b8563f96a9b38bf4f" target="_blank">register yourself</a> to confirm your sponsorship.
+                After making the payment, please kindly <a href="https://spangled-freckle-3c4.notion.site/Registration-Sponsorship-alumni-10fb3143bf68802b8563f96a9b38bf4f">register yourself</a> to confirm your sponsorship.
               </p>
               <p>
                 Your support will greatly enhance the experience for participants and showcase your commitment to fostering talent in the field!
