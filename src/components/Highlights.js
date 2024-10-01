@@ -23,7 +23,7 @@ const Highlights = () => {
     <div className="highlight-description">
       <h2>OPTIMA - Celebrating 30 Years</h2>
       <p>
-        <strong>OPTIMA</strong> is the official technical club of the Department of Computer Applications at NIT Trichy, run by students from the <strong>M.Sc Computer Science</strong> and <strong>M.Tech Data Analytics</strong> programs. It provides a platform for technical growth through <strong>hackathons</strong>, <strong>coding contests</strong>, and <strong>workshops</strong>.
+        <strong>OPTIMA</strong> is the official technical club of the Department of Computer Applications at NIT Trichy, for the students of <strong>M.Sc Computer Science</strong> and <strong>M.Tech Data Analytics</strong> programs. It provides a platform for technical growth through <strong>hackathons</strong>, <strong>coding contests</strong>, and <strong>workshops</strong>.
       </p>
       <p>
         Celebrating over <strong>30 years</strong> of excellence, the club fosters hands-on learning, bridging academic knowledge with real-world applications, and connects students with industry trends and innovations in <strong>Information Technology</strong>.

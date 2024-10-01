@@ -99,7 +99,7 @@ const App = () => {
 
       <div className="announcement-bar">
         <div className="announcement">
-          <span>Optima 2024: November 9-10!</span>
+          <span>Optima 2024: November 9-10.</span>
           <span>For event details, click <a href="https://spangled-freckle-3c4.notion.site/Welcome-to-Optima-2024-10bb3143bf688027a32afba9c503dfde">here</a>.</span>
           <span>Interested in sponsoring? Visit our <a href="https://spangled-freckle-3c4.notion.site/Registration-Sponsorship-alumni-10fb3143bf68802b8563f96a9b38bf4f" onClick={() => setActiveSection('sponsors')}>sponsors section</a>!</span>
         </div>
@@ -162,11 +162,14 @@ const App = () => {
             <div>
               <h2>Become a Sponsor</h2>
               <p>
-                Join us in making OPTIMA 2024 a grand success by becoming a sponsor! We have various sponsorship tiers designed to suit your support level:
+                Join us in making OPTIMA 2024 a grand success by becoming a sponsor! 
+              </p>
+              <p>
+                We have various sponsorship tiers designed to suit you.
               </p>
               <div className="sponsor-content">
                 <div className="sponsorship-tiers">
-                  <h3>Sponsorship Tiers:</h3>
+                  <h3>Sponsorship Tiers</h3>
                   <ul>
                     <li><strong>Gold Sponsorship:</strong> ₹20,000/-</li>
                     <li><strong>Silver Sponsorship:</strong> ₹10,000/-</li>
