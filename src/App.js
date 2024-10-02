@@ -41,6 +41,21 @@ const App = () => {
     'Images/optima-23-12.JPG',
     'Images/optima-23-13.JPG',
     'Images/optima-23-14.JPG',
+    'Images/optima-23-15.JPG',
+    'Images/optima-23-16.JPG',
+    'Images/optima-23-17.JPG',
+    'Images/optima-23-18.JPG',
+    'Images/optima-23-19.JPG',
+    'Images/optima-23-20.JPG',
+    'Images/optima-23-21.JPG',
+    'Images/optima-23-23.JPG',
+    'Images/optima-23-25.JPG',
+    'Images/optima-23-26.JPG',
+    'Images/optima-23-31.JPG',
+    'Images/optima-23-33.JPG',
+    'Images/optima-23-34.JPG',
+    'Images/optima-23-35.JPG',
+    'Images/optima-23-36.JPG'
   ]
 
   const teamMembers = [
