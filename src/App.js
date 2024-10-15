@@ -60,10 +60,10 @@ const App = () => {
 
   const teamMembers = [
     { name: 'Prem Sagar', role: 'President', branch: 'M.Tech Data Analytics', imgSrc: '/Images/prem_sagar.png' },
-    { name: 'Chirag', role: 'Secretary', branch: 'M.Tech Data Analytics', imgSrc: '/Images/chirag.png' },
     { name: 'Suraj', role: 'Treasurer', branch: 'M.Tech Data Analytics', imgSrc: '/Images/suraj.png' },
+    { name: 'Chirag', role: 'Secretary', branch: 'M.Tech Data Analytics', imgSrc: '/Images/chirag.png' },
     { name: 'Gauri', role: 'Co-ordinator', branch: 'M.Tech Data Analytics', imgSrc: '/Images/gauri.png' },
-    { name: 'Anushree', role: 'Technical Head', branch: 'M.Sc Computer Science', imgSrc: '/Images/anushree.png' },
+    { name: 'Gaurav Padole', role: 'Technical Head', branch: 'M.Tech Data Analytics', imgSrc: '/Images/gaurav.jpeg' },
   ];
 
   const coreMembers = [
@@ -141,7 +141,6 @@ const App = () => {
                 <a className="event-card" href='https://spangled-freckle-3c4.notion.site/CodeCraft-10cb3143bf6880ce9eeeecbe1650b0cb'><div >Codecraft</div></a>
                 <a className="event-card" href='https://spangled-freckle-3c4.notion.site/Outliers-10cb3143bf6880c9a167ed06379aaa1b'><div >Outliers</div></a>
                 <a className="event-card" href='https://spangled-freckle-3c4.notion.site/Clash-of-Thoughts-10cb3143bf68803fb05ac1cff146e91f'><div>Clash of Thoughts</div></a>
-                <a className="event-card" href='https://www.notion.so/Matrix-Maze-4f50c4cd7b074087b2a3011d0390c031'><div >Matrix Maze</div></a>
                 <a className="event-card" href='https://spangled-freckle-3c4.notion.site/BrainCache-10cb3143bf68806cab01c0e0d29a367e'><div >Brain Cache</div></a>
                 <a className="event-card" href='https://spangled-freckle-3c4.notion.site/Pitch-Perfect-10cb3143bf6880f1b9c6f3886d7b6d47'><div >Pitch Perfect</div></a>
                 <a className="event-card" href='https://spangled-freckle-3c4.notion.site/Elite-Warfare-10cb3143bf6880ed9d9fceb670170ac2'><div >Elite Warfare</div></a>
@@ -157,7 +156,7 @@ const App = () => {
             <div>
               <h2>Become a Sponsor</h2>
               <p>
-                Join us in making OPTIMA 2024 a grand success by becoming a sponsor! 
+                Join us in making OPTIMA 2024 a grand success by becoming a sponsor!
               </p>
               <p>
                 We have various sponsorship tiers designed to suit you.
@@ -231,7 +230,11 @@ const App = () => {
 
       <footer>
         <p>&copy; 2024 Department of Computer Applications. All rights reserved.</p>
+        <p class="developer-info">
+          Developed by <a href="https://github.com/Geyanth08" target="_blank" rel="noopener noreferrer">Geyanth</a>
+        </p>
       </footer>
+
     </div>
   );
 };

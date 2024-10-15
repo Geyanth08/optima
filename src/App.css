@@ -308,6 +308,20 @@ footer p {
   margin: 0;
 }
 
+.developer-info {
+  margin-top: 10px; /* Add some space above */
+}
+
+.developer-info a {
+  color: var(--footer-text);
+  text-decoration: underline; /* Underline link */
+}
+
+.developer-info a:hover {
+  color: lightcoral; /* Change color on hover */
+}
+
+
 #gallery {
   background-color: white;
 }

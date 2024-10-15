@@ -1,0 +1,11 @@
+version: '3.8'
+
+services:
+  react-app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "9910:9910"  # Exposing port 9910 from the container to port 9910 on the host
+    container_name: optima-app
+    restart: always

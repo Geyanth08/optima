@@ -16,11 +16,8 @@ COPY . .
 # Build the React app
 RUN npm run build
 
-# Install a lightweight web server to serve the React build
-RUN npm install -g serve
-
-# Expose port 9910
+# Expose port 3000 (React default)
 EXPOSE 9910
 
-# Start the app on port 9910
-CMD ["serve", "-s", "build", "-l", "9910"]
+# Start the React app
+CMD ["npm", "start"]
